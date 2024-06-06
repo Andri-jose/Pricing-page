@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Frontend Mentor | Interactive pricing component</title>
+</head>
+
+<body>
+    <header class="d-flex flex-column justify-content-evenly">
+        <h1>Simple, traffic-based pricing</h1>
+        <p>Sign-up for our 30-day trial. No credit card required.</p>
+    </header>
+
+    <main class="d-flex flex-column justify-content-evenly">
+        <form class="d-flex flex-column justify-content-evenly">
+            <div class="d-flex justify-content-around mt-3">
+                <span id="pageviews"></span> <!-- <p>100k pageviews</p> -->
+                <div class="d-flex main_price">
+                    <label id="price"></label>  <!-- price update -->
+                    <span class="price_month">/ month</span>
+                </div>
+            </div>
+            <div class="slider-container">
+                <input type="range" id="myRange" min="0" max="4" class="slider-input">  <!-- slider bar -->
+            </div>
+            <diV class="d-flex justify-content-evenly mt-5 main_description">
+                <p class="main_month">Monthly Billing</p>
+                <label class="switch" id="switch">
+                    <input type="checkbox" id="checkbox" class="checkbox" onclick="answerClick()">
+                    <span class="slider_toggle"></span>
+                </label> 
+                <p class="main_year">Yearly Billing</p>
+                <p class="main_discount">-25% discount</p>
+            </diV>
+        </form>
+    <footer class="d-flex justify-content-around">
+        <div class="footer_container">
+            <p class="footer_description"><img src="icon-check.svg" alt="check icon">Unlimited websites</p>
+            <p class="footer_description"><img src="icon-check.svg" alt="check icon">100% data ownership</p>
+            <p class="footer_description"><img src="icon-check.svg" alt="check icon">Email reports</p>
+        </div>
+        <div class="footer_button">
+            <button>Start my trial</button>
+        </div>
+    </footer>
+    </main>
+ 
+
+  <script src="price.js"></script>
+</body>
+</html>
+
+
+
+<!-- - Use the slider and toggle to see prices for different page view numbers (details provided below)
+
+### Page view and pricing totals
+
+Here are the different page view ranges and the corresponding monthly price totals:
+
+- 10K pageviews / $8 per month
+- 50K pageviews / $12 per month
+- 100K pageviews / $16 per month
+- 500k pageviews / $24 per month
+- 1M pageviews / $36 per month
+
+If the visitor switches the toggle to yearly billing, a 25% discount should be applied to all prices. -->
+
+
+  <!-- 
+  
+
+  Pageviews
+  $ /month
+
+
+  
+  
+  
+
+   -->
+  
+
+
+<!-- Feel free to remove these styles or customise in your own stylesheet 👍
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
